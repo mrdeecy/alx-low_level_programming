@@ -2,6 +2,13 @@
 #include "6-abs.c"
 #include <stdio.h>
 
+/**
+ * main - main function
+ *
+ * prints natural numbers 0 to 5
+ *
+ * Return nothing (void)
+*/
 void print_to_98(int n)
 {
 	int i;
