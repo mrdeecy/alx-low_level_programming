@@ -7,7 +7,7 @@
  *
  * print_to_98 - prints natural numbers 0 to 98
  * 
- * n - is a variable
+ * @n - is a variable to return
  *
  * Return nothing (void)
 */
