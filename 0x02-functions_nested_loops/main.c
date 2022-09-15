@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _ALX_
+#define _ALX_
 /**
  * _putchar - writes the character c to std
  * @c: parameter to compare
