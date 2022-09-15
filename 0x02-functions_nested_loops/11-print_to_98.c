@@ -5,7 +5,9 @@
 /**
  * main - main function
  *
- * prints natural numbers 0 to 5
+ * print_to_98 - prints natural numbers 0 to 98
+ * 
+ * n - is a variable
  *
  * Return nothing (void)
 */
