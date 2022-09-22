@@ -1,18 +1,31 @@
+#include "main.h"
 
-**
- * _strcat - copies from source to dest values in array
- * @dest: destination to copy to
- * @src: source to copy from
- * @n: n amount of times
- * Return: return the string value
+/**
+ * _strncat - concatenates n bytes from a string to another
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes of str to concatenate
+ *
+ * Return: a pointer to the resulting string dest
  */
-char *_strcat(char *dest, char *src, unsigned int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	unsigned int i;
+	int i, j;
 
-	for (i = 0; i < n; i++)
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0' && j < n)
 	{
-		dest[i] = src[i];
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
+
+	dest[i] = '\0';
+
 	return (dest);
 }
