@@ -1,18 +1,30 @@
 #include "main.h"
-/**
- * _strcat - sets memory to array
- * @s: array to set
- * @b: value to set it as
- * @n: n amount of times
- * Return: char value of s
- */
-char *_strcat(char *s, char b, unsigned int n)
-{
-	unsigned int i;
 
-	for (i = 0; i < n; i++)
+/**
+ * _strcat - concatenates two strings
+ * @dest: string to append to
+ * @src: string to add
+ *
+ * Return: a pointer to the resulting string
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i, j;
+
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
 	{
-		s[i] = b;
+		dest[i] = src[j];
+		j++;
+		i++;
 	}
-	return (s);
+
+	dest[i] = '\0';
+
+	return (dest);
 }
